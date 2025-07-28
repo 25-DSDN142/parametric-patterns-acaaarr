@@ -21,5 +21,34 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+
+
+
+
+    noStroke();
+  fill(3, 0, 79);
+  ellipse(100, 35, 50, 50);
+  fill(255, 224, 245);
+  ellipse(50, 75, 80, 100);
+  fill(255, 255, 255);
+  //left eye
+  ellipse(25, 70, 20, 10);
+  //right eye
+  ellipse(63 ,70, 20, 10);
+  fill(3, 0, 79);
+  circle(25, 70, 5);
+  circle(63, 70, 5);
+  triangle(100, 35, 58, 20, 86, 75);
+  strokeWeight(1);
+  stroke(0);
+  noFill();
+  curve(50, 60, 25, 50, 25, 65, 50, 90);
+  curve(50, 60, 20, 50, 20, 65, 50, 90);
+  curve(50, 60, 30, 50, 30, 65, 50, 90);
+var x=38;
+var y=(90);
+  curve(y, 60, x+25, 50, x+25, 65, y, 90);
+  curve(y, 60, x+20, 50, x+20, 65, y, 90);
+  curve(y, 60, x+30, 50, x+30, 65, y, 90);
+
 }
