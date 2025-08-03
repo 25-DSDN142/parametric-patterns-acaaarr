@@ -42,14 +42,23 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   strokeWeight(1);
   stroke(0);
   noFill();
-  curve(50, 60, 25, 50, 25, 65, 50, 90);
-  curve(50, 60, 20, 50, 20, 65, 50, 90);
-  curve(50, 60, 30, 50, 30, 65, 50, 90);
-var x=38;
-var y=(90);
-  curve(y, 60, x+25, 50, x+25, 65, y, 90);
-  curve(y, 60, x+20, 50, x+20, 65, y, 90);
-  curve(y, 60, x+30, 50, x+30, 65, y, 90);
+
+//left lash
+//1
+  curve(70, 60, 50, 60, 50, 73, 70, 90);
+//2
+  curve(80, 60, 58, 59, 58, 71, 80, 90);
+  //3
+  curve(88, 60, 66, 60, 66, 71, 88, 80);
+var x=(50);
+
+//right lash
+//1
+  curve(130, 60, 50+x, 60, 50+x, 73, 130, 90);
+//2
+  curve(130, 60, 58+x, 59, 58+x, 71, 130, 90);
+  //3
+  curve(130, 60, 66+x, 60, 66+x, 71, 130, 80);
 
   //bababoii
 
