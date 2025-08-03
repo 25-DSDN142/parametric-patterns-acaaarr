@@ -27,18 +27,18 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
     noStroke();
   fill(3, 0, 79);
-  ellipse(100, 35, 50, 50);
+  ellipse(150, 45, 75, 75);
   fill(255, 224, 245);
-  ellipse(50, 75, 80, 100);
+  ellipse(100, 100, 120, 150);
   fill(255, 255, 255);
   //left eye
-  ellipse(25, 70, 20, 10);
+  ellipse(60, 80, 30, 20);
   //right eye
-  ellipse(63 ,70, 20, 10);
+  ellipse(110 ,80, 30, 20);
   fill(3, 0, 79);
-  circle(25, 70, 5);
-  circle(63, 70, 5);
-  triangle(100, 35, 58, 20, 86, 75);
+  circle(62, 80, 10);
+  circle(112, 80, 10);
+  triangle(90, 22, 160, 20, 165, 95);
   strokeWeight(1);
   stroke(0);
   noFill();
