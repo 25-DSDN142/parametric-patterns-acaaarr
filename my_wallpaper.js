@@ -39,6 +39,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   circle(62, 80, 10);
   circle(112, 80, 10);
   triangle(90, 22, 160, 20, 165, 95);
+  triangle(50, 45, 85, 20, 105, 40);
+    //eyebrows
+  //left
+  rotate(0);
+   ellipse(60, 60, 30, 10);
+  //right
+  rotate(0);
+  ellipse(105, 60, 30, 10);
   strokeWeight(1);
   stroke(0);
   noFill();
@@ -59,7 +67,16 @@ var x=(50);
   curve(130, 60, 58+x, 59, 58+x, 71, 130, 90);
   //3
   curve(130, 60, 66+x, 60, 66+x, 71, 130, 80);
-
+  //nose
+  stroke(145, 74, 60);
+  line(83, 90, 75, 120);
+  line(88, 120, 75, 120);
+  //mouth
+  noStroke();
+  fill(227, 59, 98);
+  ellipse(83, 135, 30, 10);
+  ellipse(83, 145, 30, 10);
   //bababoii
+
 
 }
