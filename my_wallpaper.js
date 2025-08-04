@@ -27,12 +27,12 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
     noStroke();
-  let hair = color(232, 224, 200);
+  let hair = color(156, 156, 156);
   fill(hair);
   //bun
   var hw = 120;
   var bb = 85;
-  var m = 0;
+  var m = -3;
   if (bb<75){hw = 125};
   ellipse(150, 45, bb, bb);
   //head
@@ -42,7 +42,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   if (m > 1) {
     skin = color(245, 135, 135);
   } else {
-    skin = color(255, 224, 245);
+    skin = color(179, 192, 245);
   }
   fill(skin);
   ellipse(100, 100, hw, 150);
@@ -50,7 +50,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   fill(255, 255, 255);
   //left eye
   if (w<20){b=55}
-  var w = 10;
+  var w = 30;
   var e = w / 2;
   ellipse(60, 80, 30, w);
   //right eye
@@ -65,7 +65,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     //eyebrows
   //left
   rotate(0);
-  var b =75;
+  var b =60;
    ellipse(60, b, 30, 10);
   //right
   rotate(0);
