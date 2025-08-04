@@ -4,12 +4,12 @@ let rect_height = 30;
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GRID_WALLPAPER);
   //DEVELOP_GLYPH
   
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -18,7 +18,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(255, 255, 255); //light honeydew green colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -27,26 +27,36 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
     noStroke();
-  fill(3, 0, 79);
+  let hair = color(232, 224, 200);
+  fill(hair);
   //bun
-  var bb = 75;
-  if (bb<75){hw = 130};
+  var hw = 120;
+  var bb = 85;
+  var m = 0;
+  if (bb<75){hw = 125};
   ellipse(150, 45, bb, bb);
   //head
-   let skin = color(255, 224, 245);
+  // ...existing code...
+  //head
+  let skin;
+  if (m > 1) {
+    skin = color(245, 135, 135);
+  } else {
+    skin = color(255, 224, 245);
+  }
   fill(skin);
-  hw = 120;
-  ellipse(100, 100, 120, 150);
+  ellipse(100, 100, hw, 150);
+// ...existing code...
   fill(255, 255, 255);
   //left eye
   if (w<20){b=55}
-  var w = 20;
+  var w = 10;
   var e = w / 2;
   ellipse(60, 80, 30, w);
   //right eye
   ellipse(110 ,80, 30, w);
   //hair and eyebrows
-  let hair = color(3, 0, 79)
+
   fill(hair);
   circle(62, 80, e);
   circle(112, 80, e);
@@ -55,7 +65,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     //eyebrows
   //left
   rotate(0);
-  var b = 60;
+  var b =75;
    ellipse(60, b, 30, 10);
   //right
   rotate(0);
@@ -87,7 +97,6 @@ var x=(50);
   //mouth
   noStroke();
   fill(227, 59, 98);
-  var m = 2;
   ellipse(83, 135-m, 30, 10);
   ellipse(83, 145+m, 30, 10);
   //bababoii
