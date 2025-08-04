@@ -4,7 +4,7 @@ let rect_height = 30;
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
   //DEVELOP_GLYPH
   
@@ -28,26 +28,38 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
     noStroke();
   fill(3, 0, 79);
-  ellipse(150, 45, 75, 75);
-  fill(255, 224, 245);
+  //bun
+  var bb = 75;
+  if (bb<75){hw = 130};
+  ellipse(150, 45, bb, bb);
+  //head
+   let skin = color(255, 224, 245);
+  fill(skin);
+  hw = 120;
   ellipse(100, 100, 120, 150);
   fill(255, 255, 255);
   //left eye
-  ellipse(60, 80, 30, 20);
+  if (w<20){b=55}
+  var w = 20;
+  var e = w / 2;
+  ellipse(60, 80, 30, w);
   //right eye
-  ellipse(110 ,80, 30, 20);
-  fill(3, 0, 79);
-  circle(62, 80, 10);
-  circle(112, 80, 10);
+  ellipse(110 ,80, 30, w);
+  //hair and eyebrows
+  let hair = color(3, 0, 79)
+  fill(hair);
+  circle(62, 80, e);
+  circle(112, 80, e);
   triangle(90, 22, 160, 20, 165, 95);
   triangle(50, 45, 85, 20, 105, 40);
     //eyebrows
   //left
   rotate(0);
-   ellipse(60, 60, 30, 10);
+  var b = 60;
+   ellipse(60, b, 30, 10);
   //right
   rotate(0);
-  ellipse(105, 60, 30, 10);
+  ellipse(105, b, 30, 10);
   strokeWeight(1);
   stroke(0);
   noFill();
@@ -75,8 +87,9 @@ var x=(50);
   //mouth
   noStroke();
   fill(227, 59, 98);
-  ellipse(83, 135, 30, 10);
-  ellipse(83, 145, 30, 10);
+  var m = 2;
+  ellipse(83, 135-m, 30, 10);
+  ellipse(83, 145+m, 30, 10);
   //bababoii
 
 
